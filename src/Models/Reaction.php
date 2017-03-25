@@ -1,7 +1,6 @@
 <?php
 
-namespace LaravelReactions\Models;
-
+namespace FrancescoMalatesta\LaravelReactions\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -17,8 +16,11 @@ class Reaction extends Model
 
     public function getReagent()
     {
-        if($this->getOriginal('pivot_reagent_type', null)) {
-            return forward_static_call(array($this->getOriginal('pivot_reagent_type'), 'find'), $this->getOriginal('pivot_reagent_id'));
+        if ($this->getOriginal('pivot_reagent_type', null)) {
+            return forward_static_call(
+                [$this->getOriginal('pivot_reagent_type'), 'find'],
+                $this->getOriginal('pivot_reagent_id')
+            );
         }
 
         return null;

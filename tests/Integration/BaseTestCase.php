@@ -1,6 +1,6 @@
 <?php
 
-namespace LaravelReactions\Tests\Integration;
+namespace FrancescoMalatesta\LaravelReactions\Tests\Integration;
 
 use Orchestra\Testbench\TestCase;
 

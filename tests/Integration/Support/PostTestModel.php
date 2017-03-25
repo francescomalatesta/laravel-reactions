@@ -1,11 +1,10 @@
 <?php
 
-namespace LaravelReactions\Tests\Integration\Support;
-
+namespace FrancescoMalatesta\LaravelReactions\Tests\Integration\Support;
 
 use Illuminate\Database\Eloquent\Model;
-use LaravelReactions\Contracts\ReactableInterface;
-use LaravelReactions\Traits\Reactable;
+use FrancescoMalatesta\LaravelReactions\Contracts\ReactableInterface;
+use FrancescoMalatesta\LaravelReactions\Traits\Reactable;
 
 class PostTestModel extends Model implements ReactableInterface
 {

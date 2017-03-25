@@ -29,12 +29,12 @@
     },
     "autoload": {
         "psr-4": {
-            "LaravelReactions\\": "src"
+            "FrancescoMalatesta\\LaravelReactions\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "LaravelReactions\\Tests\\": "tests"
+            "FrancescoMalatesta\\LaravelReactions\\Tests\\": "tests"
         }
     },
     "scripts": {

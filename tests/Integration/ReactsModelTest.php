@@ -1,16 +1,15 @@
 <?php
 
-namespace LaravelReactions\Tests\Integration;
-
+namespace FrancescoMalatesta\LaravelReactions\Tests\Integration;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Schema\Blueprint;
-use LaravelReactions\Contracts\ReactableInterface;
-use LaravelReactions\Models\Reaction;
-use LaravelReactions\Tests\Integration\Support\PostTestModel;
-use LaravelReactions\Tests\Integration\Support\UserTestModel;
-use LaravelReactions\Traits\Reactable;
-use LaravelReactions\Traits\Reacts;
+use FrancescoMalatesta\LaravelReactions\Contracts\ReactableInterface;
+use FrancescoMalatesta\LaravelReactions\Models\Reaction;
+use FrancescoMalatesta\LaravelReactions\Tests\Integration\Support\PostTestModel;
+use FrancescoMalatesta\LaravelReactions\Tests\Integration\Support\UserTestModel;
+use FrancescoMalatesta\LaravelReactions\Traits\Reactable;
+use FrancescoMalatesta\LaravelReactions\Traits\Reacts;
 
 class ReactsModelTest extends BaseTestCase
 {

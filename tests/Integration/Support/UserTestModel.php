@@ -1,10 +1,9 @@
 <?php
 
-namespace LaravelReactions\Tests\Integration\Support;
-
+namespace FrancescoMalatesta\LaravelReactions\Tests\Integration\Support;
 
 use Illuminate\Database\Eloquent\Model;
-use LaravelReactions\Traits\Reacts;
+use FrancescoMalatesta\LaravelReactions\Traits\Reacts;
 
 class UserTestModel extends Model
 {

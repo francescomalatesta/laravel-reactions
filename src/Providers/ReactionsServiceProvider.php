@@ -1,6 +1,6 @@
 <?php
 
-namespace LaravelReactions\Providers;
+namespace FrancescoMalatesta\LaravelReactions\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

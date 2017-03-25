@@ -1,8 +1,7 @@
 <?php
-namespace LaravelReactions\Tests\Unit;
+namespace FrancescoMalatesta\LaravelReactions\Tests\Unit;
 
-
-use LaravelReactions\Models\Reaction;
+use FrancescoMalatesta\LaravelReactions\Models\Reaction;
 
 class ReactionTest extends \PHPUnit_Framework_TestCase
 {

@@ -1,7 +1,6 @@
 <?php
 
-namespace LaravelReactions\Contracts;
-
+namespace FrancescoMalatesta\LaravelReactions\Contracts;
 
 interface ReactableInterface
 {

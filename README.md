@@ -25,10 +25,8 @@ $ composer require francescomalatesta/laravel-reactions
 
 Add the Service Provider to your `config/app.php` file.
 
-```
-    ...
-    LaravelReactions\Providers\ReactionsServiceProvider::class,
-    ...
+```php
+FrancescoMalatesta\LaravelReactions\Providers\ReactionsServiceProvider::class,
 ```
 
 Run the migrations to create `reactions` and `reactables` tables.
@@ -45,9 +43,9 @@ You're good to go.
 
 To use the package you need to follow two steps:
 
-* add the `LaravelReactions\Traits\Reacts` trait to the entity that is going to react to something;
-* add the `LaravelReactions\Traits\Reactable` trait to the entity that is going to "receive" reactions;
-* be sure that the entity that receives reactions also implements the `LaravelReactions\Contracts\ReactableInterface`;
+* add the `FrancescoMalatesta\LaravelReactions\Traits\Reacts` trait to the entity that is going to react to something;
+* add the `FrancescoMalatesta\LaravelReactions\Traits\Reactable` trait to the entity that is going to "receive" reactions;
+* be sure that the entity that receives reactions also implements the `FrancescoMalatesta\LaravelReactions\Contracts\ReactableInterface`;
 
 Let's make an example.
 
@@ -57,10 +55,10 @@ You want to let your user add reactions to your posts. Just like Facebook, you k
 
 Let's say we have two models: `User` and `Post`.
 
-Following the steps, we first add the `LaravelReactions\Traits\Reacts` trait to our `User` model.
+Following the steps, we first add the `FrancescoMalatesta\LaravelReactions\Traits\Reacts` trait to our `User` model.
 
 ```php
-use LaravelReactions\Traits\Reacts;
+use FrancescoMalatesta\LaravelReactions\Traits\Reacts;
 
 class User extends Model {
     use Reacts;
@@ -70,8 +68,8 @@ class User extends Model {
 Done! Now, to the `Post` model!
 
 ```php
-use LaravelReactions\Traits\Reacts;
-use LaravelReactions\Contracts\ReactableInterface;
+use FrancescoMalatesta\LaravelReactions\Traits\Reacts;
+use FrancescoMalatesta\LaravelReactions\Contracts\ReactableInterface;
 
 class Post extends Model implements ReactableInterface {
     use Reactable;

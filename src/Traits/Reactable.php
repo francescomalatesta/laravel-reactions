@@ -1,7 +1,6 @@
 <?php
 
-namespace LaravelReactions\Traits;
-
+namespace FrancescoMalatesta\LaravelReactions\Traits;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphToMany;
@@ -14,7 +13,7 @@ trait Reactable
     public function reactions()
     {
         /** @var $this Model */
-        return $this->morphToMany('LaravelReactions\\Models\\Reaction', 'reactable')
+        return $this->morphToMany('FrancescoMalatesta\\LaravelReactions\\Models\\Reaction', 'reactable')
             ->withPivot(['reagent_id', 'reagent_type']);
     }
 
