@@ -32,6 +32,6 @@ class CreateReactablesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('reactables');
+        Schema::drop('reactables');
     }
 }
