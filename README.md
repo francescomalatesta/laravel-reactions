@@ -17,6 +17,10 @@ Laravel Reactions is the package you need if you want to implement Facebook-like
 * you can implement reactions for multiple entities, thanks to a polymorphic many to many relationship;
 * you can implement reactions from multiple entities, thanks to some extra magic under the hood;
 
+#### Disclaimer
+
+This project is not associated with Facebook in any way. I've used the "reactions" just to give an idea of the concept. In case of legal issues, let me know using an email.
+
 ## Install
 
 Install the package with Composer.
