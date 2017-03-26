@@ -12,8 +12,8 @@ trait Reacts
         $reactable->reactions()->attach(
             $reaction->id,
             [
-                'reagent_id' => $this->id,
-                'reagent_type' => get_class($this)
+                'responder_id' => $this->id,
+                'responder_type' => get_class($this)
             ]
         );
     }

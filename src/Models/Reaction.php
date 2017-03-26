@@ -14,12 +14,12 @@ class Reaction extends Model
         return $reaction;
     }
 
-    public function getReagent()
+    public function getResponder()
     {
-        if ($this->getOriginal('pivot_reagent_type', null)) {
+        if ($this->getOriginal('pivot_responder_type', null)) {
             return forward_static_call(
-                [$this->getOriginal('pivot_reagent_type'), 'find'],
-                $this->getOriginal('pivot_reagent_id')
+                [$this->getOriginal('pivot_responder_type'), 'find'],
+                $this->getOriginal('pivot_responder_id')
             );
         }
 

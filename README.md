@@ -6,7 +6,7 @@
 [![Quality Score][ico-code-quality]][link-code-quality]
 [![Total Downloads][ico-downloads]][link-downloads]
 
-LaravelReaction is the package you need if you want to implement Facebook-like reactions for your Eloquent models.
+Laravel Reactions is the package you need if you want to implement Facebook-like reactions for your Eloquent models.
 
 ![](reactions.jpeg)
 
@@ -160,29 +160,25 @@ Here's what we will get:
 ]
 ```
 
-### Accessing the "Reagent"
+### Accessing the "Responder"
 
-When on Facebook, you can see "who" reacted in some way to a post. To get that `who` you can use the `getReagent` method. This works for every reaction you get using the `reactions` relationship method, of course.
+When on Facebook, you can see "who" reacted in some way to a post. To get that `who` you can use the `getResponder` method. This works for every reaction you get using the `reactions` relationship method, of course.
 
 Let's assume that a `User` named "Francesco" already reacted with the "love" reaction to a post.
 
 ```php
-    // our awesome post.
-    $awesomePost = Post::first();
-    
-    // every $reaction is a Reaction model
-    foreach($awesomePost->reactions as $reaction) 
-    {
-        $user = $reaction->getReagent();
-       
-        // this will output "Francesco"
-        echo $user->name;
-    }
+// our awesome post.
+$awesomePost = Post::first();
+
+// every $reaction is a Reaction model
+foreach($awesomePost->reactions as $reaction) 
+{
+    $user = $reaction->getResponder();
+   
+    // this will output "Francesco"
+    echo $user->name;
+}
 ```
-
-### Why "Reagent"?
-
-I know, the name sucks. I will probably update it in the future. The idea behind it was basically "the one reacts to something".
 
 ## Change log
 

@@ -2,14 +2,10 @@
 
 namespace FrancescoMalatesta\LaravelReactions\Tests\Integration;
 
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Schema\Blueprint;
-use FrancescoMalatesta\LaravelReactions\Contracts\ReactableInterface;
 use FrancescoMalatesta\LaravelReactions\Models\Reaction;
 use FrancescoMalatesta\LaravelReactions\Tests\Integration\Support\PostTestModel;
 use FrancescoMalatesta\LaravelReactions\Tests\Integration\Support\UserTestModel;
-use FrancescoMalatesta\LaravelReactions\Traits\Reactable;
-use FrancescoMalatesta\LaravelReactions\Traits\Reacts;
 
 class ReactsModelTest extends BaseTestCase
 {
@@ -36,8 +32,8 @@ class ReactsModelTest extends BaseTestCase
             'reaction_id' => $loveReaction->id,
             'reactable_id' => $post->id,
             'reactable_type' => PostTestModel::class,
-            'reagent_id' => $user->id,
-            'reagent_type' => UserTestModel::class
+            'responder_id' => $user->id,
+            'responder_type' => UserTestModel::class
         ]);
     }
 

@@ -57,11 +57,6 @@ class ReactableModelTest extends BaseTestCase
         });
     }
 
-    private function dropTestEntityTable()
-    {
-        \Schema::drop('posts');
-    }
-
     private function createTestUser($id)
     {
         $user = new UserTestModel();

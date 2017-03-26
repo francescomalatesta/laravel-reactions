@@ -20,8 +20,8 @@ class CreateReactablesTable extends Migration
             $table->integer('reactable_id');
             $table->string('reactable_type');
 
-            $table->integer('reagent_id');
-            $table->string('reagent_type');
+            $table->integer('responder_id');
+            $table->string('responder_type');
         });
     }
 

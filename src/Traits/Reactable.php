@@ -14,7 +14,7 @@ trait Reactable
     {
         /** @var $this Model */
         return $this->morphToMany('FrancescoMalatesta\\LaravelReactions\\Models\\Reaction', 'reactable')
-            ->withPivot(['reagent_id', 'reagent_type']);
+            ->withPivot(['responder_id', 'responder_type']);
     }
 
     /**
