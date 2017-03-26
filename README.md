@@ -6,9 +6,7 @@
 [![Quality Score][ico-code-quality]][link-code-quality]
 [![Total Downloads][ico-downloads]][link-downloads]
 
-Laravel Reactions is the package you need if you want to implement Facebook-like reactions for your Eloquent models.
-
-![](reactions.jpeg)
+Laravel Reactions is the package you need if you want to implement reactions for your Eloquent models, in a similar way you can see on Facebook.
 
 #### Features
 
@@ -19,7 +17,7 @@ Laravel Reactions is the package you need if you want to implement Facebook-like
 
 #### Disclaimer
 
-This project is not associated with Facebook in any way. I've used the "reactions" just to give an idea of the concept. In case of legal issues, let me know using an email.
+**This project is not associated with Facebook in any way.** I've used the "reactions" just to give an idea of the concept. In case of legal issues, let me know using an email.
 
 ## Install
 
