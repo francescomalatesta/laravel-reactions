@@ -3,8 +3,13 @@
     "type": "library",
     "description": "",
     "keywords": [
-        "francescomalatesta",
-        "laravel-reactions"
+        "laravel",
+        "package",
+	"reactions",
+	"like",
+	"love",
+	"eloquent",
+	"trait"
     ],
     "homepage": "https://github.com/francescomalatesta/laravel-reactions",
     "license": "MIT",
