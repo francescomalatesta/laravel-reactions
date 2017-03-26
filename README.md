@@ -204,7 +204,6 @@ If you discover any security related issues, please email hellofrancesco@gmail.c
 
 - [Francesco Malatesta][link-author]
 - [All Contributors][link-contributors]
-- [Facebook for Reactions Image][link-facebook-reactions]
 
 ## License
 
@@ -224,4 +223,3 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 [link-downloads]: https://packagist.org/packages/francescomalatesta/laravel-reactions
 [link-author]: https://github.com/francescomalatesta
 [link-contributors]: ../../contributors
-[link-facebook-reactions]: https://en.facebookbrand.com/assets/reactions
