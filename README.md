@@ -80,7 +80,7 @@ class Post extends Model implements ReactableInterface {
 
 Ta-dah! You're done. 
 
-Be default, the package ships with a `Reaction` model. This model has a single, simple property: its `name`. You can create a new one easily, with
+By default, the package ships with a `Reaction` model. This model has a single, simple property: its `name`. You can create a new one easily, with
 
 ```php
 $likeReaction = Reaction::createFromName('like');
